@@ -15,4 +15,11 @@ definePageMeta({
 
 // fetch the products
 const { data: products } = await useFetch('https://fakestoreapi.com/products')
+
+useHead({
+  title: 'Merchandise',
+  meta: {
+    name: 'description', content: 'Example overriden value'
+  }
+})
 </script>
