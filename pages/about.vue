@@ -5,11 +5,12 @@
       iste vitae cum?</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sunt eius modi minima velit eligendi dolores, illum
       iste vitae cum?</p>
+    <div>{{ data }}</div>
   </div>
 </template>
 
 <script setup>
-
+  const { data } = await useFetch('/api/sample_api?name=mario')
 </script>
 
 <style scoped>
