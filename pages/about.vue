@@ -10,7 +10,10 @@
 </template>
 
 <script setup>
-  const { data } = await useFetch('/api/sample_api?name=mario')
+  const { data } = await useFetch('/api/sample_api?name=mario', {
+    method: 'post',
+    body: { age: 30 }
+  })
 </script>
 
 <style scoped>
